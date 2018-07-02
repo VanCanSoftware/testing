@@ -1,12 +1,5 @@
 pipeline:
   build:
-    image: rails
-    commands:
-      - bundle install
-      - rake db:create 
+    image: apline
+    commands:      
       - echo "Here I come to samve the day!!!"
-services:
-  postgres:
-    image: postgres:9.4.5
-    environment:
-      - POSTGRES_USER=postgres
