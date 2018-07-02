@@ -1,5 +1,5 @@
-pipeline:
-  build:
-    image: rails
-    commands:      
-      - echo "Here I come to samve the day!!!"
+build:
+  image: ruby:2.4.2
+  commands:
+    - bundle install
+    - bundle exec rspec spec
