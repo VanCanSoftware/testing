@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: ruby:2.2.4
+    image: glockio/rails-env
     commands:
       - echo "Starting..."
       - ls 
