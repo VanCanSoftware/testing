@@ -2,6 +2,7 @@
 pipeline:
   build:
     image: glockio/rails-env
+    pull: true
     commands:
       - echo "Starting... with node..."
       - ls 
