@@ -9,4 +9,4 @@ pipeline:
       - pwd 
       - echo "Starting bundle"
       - bundle install
-      - bundle exec rake assests:precompile
+      - bundle exec rake assets:precompile
