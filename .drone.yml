@@ -1,7 +1,6 @@
 pipeline:
   build:
     image: glockio/rails-env
-    debug: true
     commands:
       - echo "Starting..."
       - ls 
