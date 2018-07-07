@@ -6,3 +6,4 @@ pipeline:
       - ls 
       - pwd 
       - echo "Starting bundle"
+      - bundle install
