@@ -3,5 +3,6 @@ pipeline:
     image: ruby:2.2.4
     commands:
       - echo "Starting..."
-      - gem install bundle 
-      - bundle install
+      - ls 
+      - pwd 
+      - echo "Starting bundle"
