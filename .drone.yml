@@ -2,10 +2,4 @@ pipeline:
   build:
     image: ruby:2.2.4
     commands:
-      - docker ps
       - echo "Done"
-
-  step_2: 
-    image: alpine
-    commands: 
-      - echo "here I am"
