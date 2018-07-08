@@ -1,12 +1,11 @@
-# docker build -f ./Dockerfile . -t glockio/rails-env
 pipeline:
   build:
-    image: glockio/rails-env
-    pull: true
+    image: ruby:2.2.4
     commands:
-      - echo "Starting... with node..."
+      - echo "Starting..."
       - ls 
       - pwd 
       - echo "Starting bundle"
+      - gem install bundle 
       - bundle install
-      - bundle exec rake assets:precompile
+      
