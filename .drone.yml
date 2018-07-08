@@ -8,7 +8,15 @@ pipeline:
     commands: 
       - git --version 
       - flynn --version 
-      - echo $DOCKER_USERNAME
-    secrets: [docker_username]
-
+      - echo $FLYNN_STAGING_CLUSTER_IP
+      - echo $FLYNN_STAGING_CLUSTER_NAME
+      - echo $FLYNN_STAGING_CONTROLLER_DOMAIN
+      - echo $FLYNN_STAGING_CONTROLLER_KEY
+    secrets: [
+      flynn_staging_cluster_ip,
+      flynn_staging_cluster_name,
+      flynn_staging_controller_domain,
+      flynn_staging_controller_key
+    ]
+      
       
