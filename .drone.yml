@@ -8,7 +8,6 @@ pipeline:
       - echo "Starting bundle"
       - gem install bundle 
       - bundle install
-      - bundle exec rake assets:precompile
   publish: 
     image: glockio/release-env
     commands: 
