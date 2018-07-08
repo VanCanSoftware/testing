@@ -7,11 +7,11 @@ pipeline:
       - pwd 
       - echo "Starting bundle"
       - gem install bundle 
-      - bundle install
   publish: 
     image: glockio/release-env
     commands: 
       - git --version 
       - flynn -v
+      - echo "Works"
 
 
