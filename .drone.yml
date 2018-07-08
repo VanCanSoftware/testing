@@ -11,7 +11,7 @@ pipeline:
     image: glockio/release-env
     commands: 
       - git --version 
-      - flynn -v
-      - echo "Works"
+      - flynn
+      
 
 
