@@ -8,6 +8,7 @@ pipeline:
     commands: 
       - git --version 
       - flynn --version 
+      - echo "Her"
       - flynn cluster add -p $FLYNN_STAGING_CLUSTER_IP $FLYNN_STAGING_CLUSTER_NAME $FLYNN_STAGING_CONTROLLER_DOMAIN $FLYNN_STAGING_CONTROLLER_KEY
       - flynn apps
     secrets: [
