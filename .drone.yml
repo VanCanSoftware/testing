@@ -3,9 +3,6 @@ pipeline:
     image: ruby:2.2.4
     commands:
       - echo " TODO -->  run tests here..."
-  register: 
-     image: apline
-      - echo "TODO --> Register container here..."
   push: 
     image: glockio/release-env
     commands: 
