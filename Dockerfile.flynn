@@ -1,0 +1,15 @@
+FROM alpine
+
+# apk is a package manager for apline. We use it to install curl and remove cache for smaller builds
+# http://blog.zot24.com/tips-tricks-with-alpine-docker/
+
+RUN apk --no-cache add curl 
+RUN apk --no-cache add git 
+RUN L=/usr/local/bin/flynn && curl -sSL -A "`uname -sp`" https://dl.flynn.io/cli | zcat >$L && chmod +x $L
+
+
+
+
+
+
+

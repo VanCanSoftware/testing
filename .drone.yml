@@ -9,4 +9,10 @@ pipeline:
       - gem install bundle 
       - bundle install
       - bundle exec rake assets:precompile
-      
+  publish: 
+    image: glockio/release-env
+    commands: 
+      - git --version 
+      - flynn -v
+
+
