@@ -8,7 +8,7 @@ pipeline:
     commands: 
       - git --version 
       - flynn --version 
-      - 'echo "${DOCKER_USERNAME}"'
-    secrets: [ docker_username ]
+      - echo $DOCKER_USERNAME
+    secrets: [docker_username]
 
       
