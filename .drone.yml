@@ -21,11 +21,3 @@ pipeline:
   branches: [ greg ]
 
 
-pipeline: 
-    another:
-      image: ruby:2.2.4
-      commands:
-        - echo "GREG!!!"
-  
-      
-      
