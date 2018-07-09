@@ -18,6 +18,6 @@ pipeline:
       flynn_staging_controller_key
     ]
 
-  branches: [ greg ]
+  branches: [ master, greg ]
 
 
