@@ -1,4 +1,7 @@
 pipeline:
+  when:
+    branch: master
+    
   build:
     image: ruby:2.2.4
     commands:
@@ -18,6 +21,6 @@ pipeline:
       flynn_staging_controller_key
     ]
 
-  branches: [ master, greg ]
+  
 
 
