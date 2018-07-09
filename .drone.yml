@@ -17,9 +17,5 @@ pipeline:
       flynn_staging_controller_domain,
       flynn_staging_controller_key
     ]
-  branches:
-    include: [ master, feature/* ]
-
-  
-
-
+      
+      
