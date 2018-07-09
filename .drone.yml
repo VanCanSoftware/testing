@@ -20,7 +20,6 @@ pipeline:
 
 
 pipeline: 
-  build:
     build:
       image: ruby:2.2.4
       commands:
