@@ -18,7 +18,8 @@ pipeline:
       flynn_staging_controller_key
     ]
 
-  branches: ['greg']
+
+
 pipeline: 
     another:
       image: ruby:2.2.4
