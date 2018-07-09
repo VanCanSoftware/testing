@@ -18,4 +18,4 @@ pipeline:
       flynn_staging_controller_key
     ]
         
-branches: asdf
+branches: master
