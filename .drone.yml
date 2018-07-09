@@ -10,12 +10,21 @@ pipeline:
       - flynn --version 
       - flynn cluster add -p $FLYNN_STAGING_CLUSTER_IP $FLYNN_STAGING_CLUSTER_NAME $FLYNN_STAGING_CONTROLLER_DOMAIN $FLYNN_STAGING_CONTROLLER_KEY
       - flynn -a ih-backend-ca-qa remote add qa
-      - ls
+      - git remote -v
     secrets: [
       flynn_staging_cluster_ip,
       flynn_staging_cluster_name,
       flynn_staging_controller_domain,
       flynn_staging_controller_key
     ]
+
+
+pipeline: 
+  build:
+    build:
+      image: ruby:2.2.4
+      commands:
+        - echo " TODO -->  run tests here..."
+  
       
       
